@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | The Rotor Riot Drone Simulator</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 480px; height: 854px; background: #231F20"></canvas>
+    <script src="Build/WebGL - 1.1.4.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/WebGL - 1.1.4.data",
+        frameworkUrl: "Build/WebGL - 1.1.4.framework.js",
+        codeUrl: "Build/WebGL - 1.1.4.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "RotorRiot",
+        productName: "The Rotor Riot Drone Simulator",
+        productVersion: "1.1",
+      });
+    </script>
+  </body>
+</html>
