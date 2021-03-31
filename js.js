@@ -1,16 +1,12 @@
-function red() {
-    $('div').css('background','#B60C0C')
-    .text('Screen Size RED');
-}
 
 function orange() {
-    $('canvas').css('height', screen.height - 200)
-    .text('Screen Size ORANGE');
+    
+    $('canvas').css('height', '100vh').css('width', '100%')
+   
 }
 
 function green() {
-    $('canvas').css('height', screen.height - 200)
-    .text('Screen Size GREEN')
+    // $('canvas').css('height', '100vh')
 }
 
 
